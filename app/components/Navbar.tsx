@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useShoppingCart } from "use-shopping-cart";
@@ -21,8 +21,8 @@ export default function Navbar(){
         <header className="mb-8 border-b">
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
                 <Link href="/">
-                    <h1 className="text-2xl md:text-4xl font-bold">
-                        Next<span className="text-primary">Commerce</span></h1>
+                    <h1 className="text-2xl md:text-4xl font-extrabold  ">
+                        Next<span className="text-zinc-700 font-extrabold">Commerce</span></h1>
                 </Link>
 
                 <nav className="hidden gap-12 lg:flex 2xl:ml-16">
@@ -46,7 +46,8 @@ export default function Navbar(){
                         onClick={()=>handleCartClick()}
                         className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
                     >
-                        <ShoppingBag/>
+                        <ShoppingCart/>
+                        
                         <span className="hidden text-xs font-semibold text-gray-500 sm:block">Cart</span>
                     </Button>
                 </div>

@@ -43,7 +43,9 @@ export default async function CategoryPage({
                                     className="w-full h-full object-cover object-center lg:h-full lg:w-full"
                                     width={300}
                                     height={300}
-                                    />
+                                    priority={true}
+                                    ></Image>
+                                    
                             </div>
                             <div className="mt-4 flex justify-between">
                                 <div>
@@ -54,7 +56,7 @@ export default async function CategoryPage({
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">{product.categoryName}</p>
                                 </div>
-                                <p className="text-sm font-medium tex-gray-900">${product.price}</p>
+                                <p className="text-sm font-medium text-gray-900">${product.price}</p>
                             </div>
                         </div>
                     ))}

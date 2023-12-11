@@ -43,7 +43,7 @@ params
                             <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">{data.name}</h2>
                         </div>
                         <div className="mb-6 flex items-center gap-3 md:mb-10">
-                            <Button className="rounded-full gap-x-3">
+                            <Button className=" bg-blue-500 hover:bg-blue-400 rounded-full gap-x-3">
                                 <span className="text-sm">4.2</span>
                                 <Star className="h-5 w-5"/>
                             </Button>
@@ -54,7 +54,7 @@ params
                         <div className="mb-4">
                             <div className="flex items-end gap-2">
                                 <span className="text-xl font-bold text-gray-800 md:text-2xl">${data.price}</span>
-                                <span className="mb-0.5 text-red-500 font-semibold line-through">${data.price+30}</span>
+                                <span className="mb-1 text-red-500 font-bold line-through">${data.price + Math.round(data.price * 0.3)}</span>
                             </div>
                             <span className="text-sm text-gray-500">Incl. Vat plus shipping</span>
                         </div>

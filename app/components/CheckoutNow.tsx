@@ -30,10 +30,11 @@ export default function CheckoutNow({
     }
 
     return(
-        <Button 
+        <Button className="rounded-xl" 
             variant={"outline"}
             onClick={()=>{
             buyNow(product.price_id)
+            
         }}>
             Checkout Now
         </Button>
