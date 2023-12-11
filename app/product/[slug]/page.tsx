@@ -3,7 +3,6 @@ import ImageGallery from "@/app/components/ImageGallery";
 import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
-import category from "@/sanity/schemas/category";
 import { Star, Truck } from "lucide-react";
 
 async function getData(slug:string){
