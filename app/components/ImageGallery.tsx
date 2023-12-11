@@ -37,10 +37,10 @@ export default function ImageGallery({images}:iAppProps){
                     alt="Photo"
                     width={500}
                     height={500}
-                    className="h-full w-full object-cover object-center "
+                    className="h-full w-full object-cover object-center cursor-pointer"
                 />
 
-                <span className="absolute left-0 top-0 rounded-br-xl font-bold bg-yellow-400 px-3 py-1.5 text-sm uppercase tracking-wider text-white ">
+                <span className="absolute left-0 top-0 rounded-br-xl font-extrabold bg-yellow-400 px-3 py-1.5 text-sm uppercase tracking-wider text-white ">
                     Sale
                 </span>
             </div>

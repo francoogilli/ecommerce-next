@@ -21,8 +21,8 @@ export default function Navbar(){
         <header className="mb-8 border-b">
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
                 <Link href="/">
-                    <h1 className="text-2xl md:text-4xl font-extrabold  ">
-                        Next<span className="text-zinc-700 font-extrabold">Commerce</span></h1>
+                    <h1 className="text-2xl md:text-4xl font-extrabold text-zinc-700 ">
+                        E-<span className=" ">Commerce</span></h1>
                 </Link>
 
                 <nav className="hidden gap-12 lg:flex 2xl:ml-16">
@@ -33,7 +33,7 @@ export default function Navbar(){
                                     {link.name}
                                 </Link>
                             ):(
-                                <Link href={link.href} className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                                <Link href={link.href} className="text-lg font-bold text-gray-500 transition duration-100 hover:text-primary">
                                     {link.name}
                                 </Link>
                             )}

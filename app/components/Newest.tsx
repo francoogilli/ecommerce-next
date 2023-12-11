@@ -49,7 +49,7 @@ export default async function Newest(){
                             </div>
                             <div className="mt-4 flex justify-between">
                                 <div>
-                                    <h3 className="text-sm font-medium text-gray-700">
+                                    <h3 className="text-sm[.9375rem] font-semibold text-gray-700">
                                         <Link href={`/product/${product.slug}`}>
                                             {product.name}
                                         </Link>

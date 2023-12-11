@@ -72,7 +72,7 @@ export default function ShoppingCartModal(){
                                         <div className="flex">
                                             <button 
                                                 type="button" 
-                                                className="font-medium text-primary hover:text-primary/80"
+                                                className="font-medium text-blue-500 hover:text-primary/80"
                                                 onClick={()=> removeItem(entry.id)}
                                             >
                                                 Remove
@@ -95,7 +95,7 @@ export default function ShoppingCartModal(){
                     Shipping and taxes are calculated at checkout
                 </p>
                 <div className="mt-6">
-                    <Button onClick={handleCheckoutClick} className="w-full">
+                    <Button onClick={handleCheckoutClick} className="w-full bg-blue-500 hover:bg-blue-400">
                         Checkout
                     </Button>
                 </div>
