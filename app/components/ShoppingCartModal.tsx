@@ -18,7 +18,12 @@ export default function ShoppingCartModal(){
         removeItem,
         totalPrice,
         redirectToCheckout,
-    }=useShoppingCart()
+        incrementItem,
+        decrementItem,
+    } = useShoppingCart();
+
+
+
 
 
     async function handleCheckoutClick(event:any){
@@ -69,10 +74,25 @@ export default function ShoppingCartModal(){
                                     </div>
                                     <div className="flex flex-1 items-end justify-between text-sm">
                                         <p className="text-gray-500">x{entry.quantity}</p>
-                                        <div className="flex">
-                                            <button 
+                                        <div className="flex gap-3 items-center">
+                                        <button
+                                            type="button"
+                                            className="font-extrabold text-2xl  text-blue-600 hover:text-primary/80"
+                                            onClick={() => decrementItem(entry.id)}
+                                        >
+                                            -
+                                        </button>
+
+                                        <button
+                                            type="button"
+                                            className="font-extrabold text-2xl  text-blue-600 hover:text-primary/80"
+                                            onClick={() => incrementItem(entry.id)}
+                                        >
+                                            +
+                                        </button>
+                                        <button 
                                                 type="button" 
-                                                className="font-medium text-blue-500 dark:text-blue-600 hover:text-primary/80"
+                                                className="font-medium  text-blue-500 dark:text-blue-600 hover:text-primary/80"
                                                 onClick={()=> removeItem(entry.id)}
                                             >
                                                 Remove
