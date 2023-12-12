@@ -39,13 +39,15 @@ export default async function Newest(){
                     {data.map((product)=>(
                         <div key={product._id} className="group relative">
                             <div className="aspect-square w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 lg:h-80">
+                            <Link href={`/product/${product.slug}`}>   
                                 <Image 
                                     src={product.imageUrl} 
                                     alt="Product image" 
-                                    className="w-full h-full object-cover object-center lg:h-full lg:w-full"
+                                    className="w-full h-full object-cover object-center cursor-pointer lg:h-full lg:w-full"
                                     width={300}
                                     height={300}
-                                    />
+                                />
+                                </Link>
                             </div>
                             <div className="mt-4 flex justify-between">
                                 <div>
