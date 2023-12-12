@@ -23,7 +23,7 @@ export default function ThemeToggle(){
     },[darkMode])
     return (
         <div
-      className="relative w-8 h-8 flex items-center dark:bg-zinc-900 bg-white cursor-pointer rounded-full p-1.5"
+      className="relative w-8 h-8 flex items-center dark:bg-zinc-900 bg-gray-100 cursor-pointer rounded-full p-1.5"
       onClick={() => setDarkMode(!darkMode)}
     >
       {darkMode ? (

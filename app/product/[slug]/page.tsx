@@ -33,7 +33,7 @@ params
     
 
     return(
-        <div className="bg-white dark:bg-zinc-900 ">
+        <div className="bg-gray-200 dark:bg-zinc-900 ">
             <div className="mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid gap-8 md:grid-cols-2">
                     <ImageGallery images={data.images}/>

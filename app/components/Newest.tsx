@@ -35,9 +35,9 @@ export default async function Newest(){
                         </span>
                     </Link>
                 </div>
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
                     {data.map((product)=>(
-                        <div key={product._id} className="group relative">
+                        <div key={product._id} className="group relative hover:scale-110 transition ease-in-out">
                             <div className="aspect-square w-full overflow-hidden rounded-2xl bg-gray-200 group-hover:opacity-75 lg:h-80">
                             <Link href={`/product/${product.slug}`}>   
                                 <Image 
@@ -58,7 +58,7 @@ export default async function Newest(){
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500 dark:text-gray-300">{product.categoryName}</p>
                                 </div>
-                                <p className="text-sm font-medium text-gray-300 dark:text-gray-300">${product.price}</p>
+                                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">${product.price}</p>
                             </div>
                         </div>
                     ))}

@@ -48,13 +48,13 @@ export default async function Hero(){
             </div>
             <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
                 <div className="flex h-12 w-64 divide-x overflow-hidden rounded-2xl border">
-                    <Link href="/Men" className="flex w-1/3 items-center justify-center font-semibold text-gray-400 dark:text-gray-300 transition duration-100 hover:bg-gray-100 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
+                    <Link href="/Men" className="flex w-1/3 items-center justify-center font-semibold text-gray-500 dark:text-gray-300 transition duration-100 hover:bg-gray-100 bg-gray-50 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
                         Men
                     </Link>
-                    <Link href="/Women" className="flex w-1/3 items-center justify-center font-semibold text-gray-400 dark:text-gray-300 transition duration-100 hover:bg-gray-100 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
+                    <Link href="/Women" className="flex w-1/3 items-center justify-center font-semibold text-gray-500 dark:text-gray-300 transition duration-100 hover:bg-gray-100 bg-gray-50 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
                         Women
                     </Link>
-                    <Link href="/Teens" className="flex w-1/3 items-center justify-center font-semibold text-gray-400 dark:text-gray-300 transition duration-100 hover:bg-gray-100 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
+                    <Link href="/Teens" className="flex w-1/3 items-center justify-center font-semibold text-gray-500 dark:text-gray-300 transition duration-100 hover:bg-gray-100 bg-gray-50 dark:bg-zinc-950 dark:hover:bg-zinc-800 active:bg-gray-200">
                         Teens
                     </Link>
                 </div>

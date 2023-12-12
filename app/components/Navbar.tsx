@@ -19,7 +19,7 @@ export default function Navbar(){
     const pathname= usePathname()
     const {handleCartClick} = useShoppingCart()
     return(
-        <header className="mb-8 border-b dark:bg-zinc-900">
+        <header className="mb-8 bg-gray-100  dark:bg-zinc-900">
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
                 <Link href="/">
                     <h1 className="text-2xl md:text-4xl font-extrabold text-zinc-700 dark:text-zinc-200 ">
@@ -47,7 +47,7 @@ export default function Navbar(){
                     <Button 
                         variant={"outline"} 
                         onClick={()=>handleCartClick()}
-                        className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 dark:hover:bg-zinc-800 rounded-none"
+                        className="flex flex-col border-none gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 bg-gray-100 dark:bg-zinc-900 hover:bg-gray-50 dark:hover:bg-zinc-800 rounded-[2rem]"
                     >
                         <ShoppingCart/>
                         
