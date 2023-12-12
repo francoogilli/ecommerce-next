@@ -30,7 +30,7 @@ export default function CheckoutNow({
     }
 
     return(
-        <Button className="rounded-xl" 
+        <Button className="rounded-xl dark:bg-zinc-800 dark:hover:bg-zinc-900" 
             variant={"outline"}
             onClick={()=>{
             buyNow(product.price_id)

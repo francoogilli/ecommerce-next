@@ -34,10 +34,10 @@ export default function AddToBag({
     }
 
     return(
-        <Button className="rounded-xl bg-blue-500 hover:bg-blue-400 font-bold" onClick={()=>{
+        <Button className="rounded-xl bg-blue-500 dark:bg-blue-600 dark:text-white hover:bg-blue-400 font-bold" onClick={()=>{
             addItem(product),handleCartClick()
         }}>
-            Add To Cart
+            Add to Cart
         </Button>
     )
 }

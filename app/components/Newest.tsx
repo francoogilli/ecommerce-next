@@ -23,12 +23,12 @@ export default async function Newest(){
     const data:simplifiedProduct[] = await getData();
 
     return (
-        <div className="bg-white">
+        <div className="bg-white dark:bg-zinc-950">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <div className="flex justify-between items-center">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Our Newest products</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200">Our Newest products</h2>
 
-                    <Link className="text-blue-500 font-bold flex items-center  bg-gray-50 px-3 py-1 rounded-2xl" href="/all">
+                    <Link className="text-blue-500 dark:text-blue-400 font-bold flex items-center  bg-gray-50 dark:bg-zinc-800 px-3 py-1 rounded-2xl" href="/all">
                         See All{" "}
                         <span>
                             <ChevronRight/>
@@ -49,14 +49,14 @@ export default async function Newest(){
                             </div>
                             <div className="mt-4 flex justify-between">
                                 <div>
-                                    <h3 className="text-sm[.9375rem] font-semibold text-gray-700">
+                                    <h3 className="text-sm[.9375rem] font-semibold text-gray-700 dark:text-gray-200">
                                         <Link href={`/product/${product.slug}`}>
                                             {product.name}
                                         </Link>
                                     </h3>
-                                    <p className="mt-1 text-sm text-gray-500">{product.categoryName}</p>
+                                    <p className="mt-1 text-sm text-gray-500 dark:text-gray-300">{product.categoryName}</p>
                                 </div>
-                                <p className="text-sm font-medium tex-gray-900">${product.price}</p>
+                                <p className="text-sm font-medium text-gray-300 dark:text-gray-300">${product.price}</p>
                             </div>
                         </div>
                     ))}
