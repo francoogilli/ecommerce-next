@@ -47,7 +47,7 @@ export default function Navbar(){
                     <Button 
                         variant={"outline"} 
                         onClick={()=>handleCartClick()}
-                        className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 dark:bg-zinc-900 dark:hover:bg-zinc-800 rounded-none"
+                        className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 dark:hover:bg-zinc-800 rounded-none"
                     >
                         <ShoppingCart/>
                         

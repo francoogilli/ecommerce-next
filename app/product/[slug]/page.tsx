@@ -45,7 +45,7 @@ params
                         <div className="mb-6 flex items-center gap-3 md:mb-10">
                             <Button className=" bg-blue-500 dark:bg-blue-600 hover:bg-blue-400 dark:text-white rounded-full gap-x-3">
                                 <span className="text-sm">4.2</span>
-                                <Star className="h-5 w-5"/>
+                                <Star strokeWidth={2.5} className="h-5 w-5"/>
                             </Button>
                             <span className="text-sm text-gray-500 dark:text-gray-300 transition duration-100">
                                 56 Ratings

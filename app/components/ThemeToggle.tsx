@@ -23,13 +23,13 @@ export default function ThemeToggle(){
     },[darkMode])
     return (
         <div
-      className="relative w-8 h-8 flex items-center dark:bg-zinc-700 bg-gray-200 cursor-pointer rounded-full p-1.5"
+      className="relative w-8 h-8 flex items-center dark:bg-zinc-900 bg-white cursor-pointer rounded-full p-1.5"
       onClick={() => setDarkMode(!darkMode)}
     >
       {darkMode ? (
-        <Moon className="text-white" />
+        <Moon strokeWidth={2} className="text-yellow-50" />
       ) : (
-        <Sun className="ml-auto text-yellow-50" />
+        <Sun strokeWidth={2.5} className="ml-auto text-zinc-700" />
       )}
     </div>
     )
