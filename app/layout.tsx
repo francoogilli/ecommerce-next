@@ -3,15 +3,10 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import CartProvider from './components/Providers'
 import ShoppingCartModal from './components/ShoppingCartModal'
-import { Poppins } from 'next/font/google';
 
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-});
+
+
 
 export const metadata: Metadata = {
   title: 'E-commerce',
@@ -25,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}`}>
+      <body >
         <CartProvider>
           <ShoppingCartModal/>
           <Navbar/>

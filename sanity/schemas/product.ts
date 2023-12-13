@@ -44,6 +44,14 @@ export default{
             to:[{
                 type:'category',
             }]
+        },
+        {
+            name:'classification',
+            title:'Product Classification',
+            type:'reference',
+            to:[{
+                type:'classification',
+            }]
         }
     ],
 }

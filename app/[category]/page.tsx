@@ -10,7 +10,8 @@ async function getData(category:string) {
           price,
           name,
           "slug":slug.current,
-          "categoryName":category->name
+          "categoryName":category->name,
+          "classificationName":classification->name
       }`;
 
       const data = await client.fetch(query);
@@ -41,7 +42,7 @@ export default async function CategoryPage({
                               
                                 <Image 
                                     src={product.imageUrl} 
-                                    alt="Product image" 
+                                    alt={product.name} 
                                     className="w-full h-full object-cover object-center lg:h-full lg:w-full"
                                     width={300}
                                     height={300}

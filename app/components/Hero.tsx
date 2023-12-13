@@ -15,7 +15,7 @@ export default async function Hero(){
         <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
             <div className="mb-8 flex flex-wrap justify-between md:mb-16">
                 <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-24">
-                    <h1 className="mb-4 text-4xl font-extrabold text-zinc-700 dark:text-zinc-200 sm:text-5xl md:mb-8 md:text-6xl">
+                    <h1 className="mb-4 text-4xl font-black text-zinc-800 dark:text-zinc-200 sm:text-5xl md:mb-8 md:text-6xl">
                     The best clothing at a higher price.
                     </h1>
                     <p className="max-w-md leading-relaxed text-gray-500 dark:text-gray-400 xl:text-lg">

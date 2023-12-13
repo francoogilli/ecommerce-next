@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        body: ["Poppins", "sans-serif"],
+      },
       colors: {
         dark:"#232A3C",
         medium:"#293245",
