@@ -28,7 +28,7 @@ export default async function Newest(){
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200">Our Newest products</h2>
 
-                    <Link className="text-blue-500  font-bold flex items-center  bg-gray-50 dark:bg-zinc-800 px-3 py-1 rounded-2xl" href="/all">
+                    <Link className="text-blue-500 font-bold flex items-center bg-gray-50 dark:bg-zinc-900 px-3 py-1 rounded-2xl hover:scale-105 transition ease-in-out duration-300" href="/all">
                         See All{" "}
                         <span>
                             <ChevronRight/>

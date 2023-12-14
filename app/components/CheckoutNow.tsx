@@ -30,7 +30,7 @@ export default function CheckoutNow({
     }
 
     return(
-        <Button className="rounded-xl dark:bg-zinc-800 dark:hover:bg-zinc-900" 
+        <Button className="w-full py-[1.875rem] rounded-full border border-black dark:border-zinc-200 dark:hover:bg-zinc-950 text-lg font-medium transition-transform active:scale-95 flex items-center justify-center gap-2 hover:opacity-75 mb-10" 
             variant={"outline"}
             onClick={()=>{
             buyNow(product.price_id)

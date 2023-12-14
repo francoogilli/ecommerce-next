@@ -16,8 +16,8 @@ export default function ImageGallery({images}:iAppProps){
         setBigImage(image);
     }
     return(
-        <div className="grid gap-4 lg:grid-cols-5">
-            <div className="order-last flex gap-4 lg:order-none lg:flex-col">
+        <div className="grid gap-3 lg:grid-cols-5 lg:pt-10 sm:pt-1">
+            <div className="order-last flex gap-2 lg:order-none lg:flex-col">
                 {images.map((image:any,idx:any)=>(
                     <div key={idx} className="overflow-hidden rounded-xl bg-gray-100">
                         <Image 
@@ -40,7 +40,7 @@ export default function ImageGallery({images}:iAppProps){
                     className="h-full w-full object-cover object-center cursor-pointer"
                 />
 
-                <span className="absolute left-0 top-0 rounded-br-xl font-bold bg-yellow-400 px-3 py-1.5 text-sm uppercase tracking-wider text-white ">
+                <span className="absolute left-0 top-0 rounded-br-xl font-bold bg-yellow-300 px-3 py-1.5 text-sm uppercase tracking-wider text-white ">
                     Sale
                 </span>
             </div>
