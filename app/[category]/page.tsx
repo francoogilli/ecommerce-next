@@ -29,7 +29,7 @@ export default async function CategoryPage({
     const data:simplifiedProduct[]= await getData(params.category);
 
     return(
-        <div className="bg-gray-200 dark:bg-zinc-900">
+        <div className="bg-gray-200 dark:bg-zinc-900 mb-32">
             <div className="mx-auto max-w-2xl px-4  sm:px-6  lg:max-w-7xl lg:px-8">
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 pb-5">Our products for {params.category}</h2>
@@ -57,9 +57,9 @@ export default async function CategoryPage({
                                             {product.name}
                                         </Link>
                                     </h3>
-                                    <p className="mt-1 text-sm text-gray-500 dark:text-gray-300">{product.categoryName}</p>
+                                    <p className="text-sm mt-2 font-semibold text-gray-500 dark:text-gray-300">${product.price}</p>
                                 </div>
-                                <p className="text-sm font-bold text-gray-900 dark:text-gray-200">${product.price}</p>
+                                <p className="mt-[0.125rem] text-sm text-gray-500 dark:text-gray-300">{product.categoryName}</p>
                             </div>
                         </div>
                     ))}

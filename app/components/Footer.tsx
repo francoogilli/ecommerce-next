@@ -50,7 +50,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col gap-3">
                             <div className="font-semibold uppercase text-sm">
-                                About nike
+                                About us
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 News
